@@ -1,0 +1,133 @@
+An autoregressive process of order p, an AR(p), has a PACF that cuts off after p lags
+A moving average process of order q has an ACF that cuts off after q lags.
+
+Select distinct customer_id from cust where cust_id not in (Select distinct customer_id from cust where item_nbr = 'i2')
+
+
+introducing apply   
+store in a vector...
+
+apply(scores,MARGIN=1,FUN=mean)# rows
+apply(scores,MARGIN=2,FUN=mean)# columns
+
+highest = apply(scores,2,max)
+highest
+class(highest)
+
+
+develop application
+pmiss<-function(x)
+{
+
+}
+#precent_missing(data) -> precentage of missing values in each columns of df
+is.na(mtcars)
+
+View(is.na(mtcars))
+
+sum(is.na(mtcars))# it gives zero it adds all false.. results in 0
+apply(is.na(mtcars),2,sum)# apply to all coumns
+apply(is.na(mtcars),2,sum)/nrow(mtcars)*100
+
+percent_missing <- function(data)
+{
+return(apply(is.na(data),2,sum)/nrow(data)*100)
+}
+
+percent_missing(mtcars)
+
+fram<- read.csv('framingham.csv')
+percent_missing(fram)
+
+#one of the ways ...
+
+
+
+Customer : BESTBUY ELectronics Store
+
+Subject : BLACK FRIDAY sales coming up.As Bestbuy identify top 20 items that would put on sale act as "DOOR Busters". Most Selling products which should drive Black Friday Sale.
+
+
+pmiss <- function(vec)
+{
+round(sum(is.na(vec)/lenght(vec)*100,2))
+}
+
+pmiss <- function(vec)
+{
+nmiss =sum(is.na(vec))
+permiss =nmiss/length(vec)*100
+return(permiss)
+}
+
+x=c(2,5,NA,8)
+y=c(NA,NA,2.25,NA)
+pmiss(x)
+pmiss(y)
+
+pmiss <- function(vec)
+{
+return(round(sum(is.na(vec))/lenght(vec)*100,2))}
+
+apply(fram,2,pmiss)
+
+percent_missing2 <- function(data)
+{
+return(apply(fram,2,pmiss))
+}
+
+
+pmiss <- function(vec)
+{
+nmiss = sum(is.na(vec))
+permiss = nmiss/length(vec)*100
+return(permiss)
+}
+
+percent_missing2 <- function(data)
+{
+pmiss <- function(vec)
+{
+nmiss = sum(is.na(vec))
+permiss = nmiss/length(vec)*100
+return(permiss)
+}
+
+#use for loop to do the same....instead of apply 
+Tip :
+Check for Footfalls for the item to increase the sale...
+Trending items
+Financially most profitable
+
+Considering there will be 100s of items.. based on sales 
+TrendingAny new products..
+Check for competitors..
+
+
+
+
+
+Function 1: all suggestions in last .R file shared by sir.
+Function 2: chi square test for dataframes
+Function 3: t test for dataframes
+rearrange 
+
+github ..
+youtube channel...
+Update: 
+Check for missing values 
+Imputation {Mean/median/kNN/Mode}
+Outlier detection
+Winsorization
+Standardization
+Take log/sqrt to check if outliers have reduced...
+
+https://www.youtube.com/playlist?list=PL6gl2XuOtSuxgfG_-DeKvXvh6gVfYLRWl
+
+https://github.com/ksshaan/EDA-with-R
+
+
+Function 1: all suggestions in last .R file shared by sir.
+Function 2: chi square test for dataframes
+Function 3: t test for dataframes
+Function 4: rearrange the columns so that they are grouped according to datatype.

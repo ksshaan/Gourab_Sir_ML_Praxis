@@ -1,0 +1,25 @@
+we will introduce methods and techniques for creating, manipulating, and visualizing 
+timeseries objects
+creating TS data..random noise/white noise + trend + seasonality
+linear trends/exponential trends 
+To decompose a series 
+https://anomaly.io/seasonal-trend-decomposition-in-r/index.html
+zoo and xts objects.
+
+ The zoo package provides a framework for working with regular and irregular time series data.
+ suggestion 1:
+ https://fluvid.com/videos/detail/Mvyai4j7mH4ZdMLp
+ default cols:suggestion 2:
+ https://fluvid.com/videos/detail/wQwqtYMqBTn8A9rx
+
+suggestion 3:
+https://fluvid.com/videos/detail/nKw2CRm4EHXQ8gMe
+
+suggestion 4:
+https://fluvid.com/videos/detail/qYLBivL7AugBGYBr
+
+rearrange the cols :
+https://fluvid.com/videos/detail/GqQafypxgS5X_6kx
+
+running chisquare vs ttest
+https://fluvid.com/videos/detail/Mvyai4jAdc4ZdxaG
